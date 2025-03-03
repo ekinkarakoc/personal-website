@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
+
 import "./globals.css";
-import { ThemeProvider } from "./Provider";
+import { ThemeProvider } from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ekin",
-  description: "portfolio",
+  title: "Ekin Karakoc",
+  description: "Modern & Minimal Portfolio",
+  icons: {
+    icon: "/hacker.svg", // Favicon
+    apple: "/apple-touch-icon.png", // iPhone & iPad için
+  },
 };
 
 export default function RootLayout({
@@ -16,11 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${inter.className} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+      </head>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

@@ -132,18 +132,18 @@ const config = {
         },
         moveVertical: {
           "0%": {
-            transform: "translateY(-50%)",
+            transform: "translateY(100px)",
           },
           "50%": {
-            transform: "translateY(50%)",
+            transform: "translateY(100px)",
           },
           "100%": {
-            transform: "translateY(-50%)",
+            transform: "translateY(100px)",
           },
         },
         scroll: {
           to: {
-            transform: "translate(calc(-50% - 0.5rem))",
+            transform: "translate(calc(0px))",
           },
         },
       },
