@@ -10,8 +10,7 @@ export const metadata: Metadata = {
   title: "Ekin Karakoc",
   description: "Modern & Minimal Portfolio",
   icons: {
-    icon: "/hacker.svg", // Favicon
-    apple: "/apple-touch-icon.png", // iPhone & iPad için
+    icon: "/hacker.svg",
   },
 };
 
@@ -22,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/jsm-logo.png" sizes="any" />
-      </head>
+      <head></head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

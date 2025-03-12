@@ -1,11 +1,9 @@
-import { link } from "fs";
-import { url } from "inspector";
 
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Approach", link: "#approach" },
-    { name: "Contact", link: "#contact" },
+  { name: "Experience", link: "#experience" },
+  { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
@@ -21,8 +19,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications.",
-    description: "",
+    title: "JavaScript, TypeScript, ReactJs, NextJs, TailwindCSS, Redux, React Native, Expo, NodeJs, Express ",
+    description: "My Tech Stack",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "ml-auto mt-auto ",
     titleClassName: "justify-start",
@@ -52,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building projects with Framer Motion",
+    title: "Currently building projects with React Native",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
